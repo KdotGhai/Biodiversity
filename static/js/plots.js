@@ -47,7 +47,7 @@ function buildMetadata(sample) {
         // Hint: Inside the loop, you will need to use d3 to append new
         // tags for each key-value in the metadata.
         Object.entries(result).forEach(([key, value]) => {
-            PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
+            PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);//this is referring to id=sample-metadata
         });
 
     });
@@ -138,7 +138,7 @@ function buildCharts(sample) {
         var bubbleLayout = {
             title: "<b>Bacteria Cultures Per Sample</b>",
             xaxis: { title: "OTU ID" },
-            paper_bgcolor:'rgba(0,0,0,0)',
+            paper_bgcolor:'rgba(1,0,0,0)',
             plot_bgcolor:'rgba(0,0,0,0)',
             font:{
                 color:'white',
